@@ -1,0 +1,46 @@
+@media screen and (width <= 950px) {
+    .hambarger {
+        display: block;
+        margin-right: 50px;
+        font-size: 2rem;
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .contact-button{
+        display: none;
+    }
+    .navBar{
+        justify-content: space-between;
+    }
+    .header-content{
+        line-height: 50px;
+    }
+    .header-content .logoImg{
+        height: 20vh;
+        width: 15vw;
+    }
+    .intro-font{
+        font-size: 7vw;
+    }
+    .welcome-font{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    .details{
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    .sidebar{
+        padding-top: 10vw;
+    }
+    
+}
+
+
+
+
+
