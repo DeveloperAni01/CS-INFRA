@@ -19,7 +19,7 @@ html,body{
 
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(20, 3, 3);
     display: inline-block;
     font-size: 1.2rem;
 }
@@ -28,12 +28,22 @@ a{
     position: relative;
     height: 100vh;
     width:100%;
-    /* background-image: url(../assets/vlad-d-NomztiKRPLg-unsplash.jpg); */
-    background-color: bisque;
-    background-position: center;
-    background-size: cover;
     overflow: hidden;
 }
+
+.backgroundVideo {
+    position: absolute;       /* Position video absolutely within .headerSection */
+    top: 50%;                 /* Center vertically */
+    left: 50%;                /* Center horizontally */
+    min-width: 100%;          /* Ensure it covers the width */
+    min-height: 100%;         /* Ensure it covers the height */
+    width: auto;              /* Maintain aspect ratio */
+    height: auto;             /* Maintain aspect ratio */
+    z-index: -1;              /* Place the video behind the content */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover;        /* Ensures video fills the area without distortion */
+}
+
  .navBar{
     padding: 10px 0;
     width: 100%;
@@ -41,7 +51,7 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+    z-index: 1;
 }
 .sidebar{
     position: fixed;
@@ -117,6 +127,7 @@ ul{
     transform: translate(-50%, -50%);
     position:absolute;
     line-height: 12.5vh;
+    z-index: 1;
 }
 
 .header-content .logoImg{
@@ -128,11 +139,13 @@ ul{
     font-size: 8vw;
     font-family: 'poppins';
     font-weight: 400;
+    color: white;
 }
 
 .welcome-font{
     font-size: 2rem;
     font-weight: 300;
+    color: white;
 }
 
 .hambarger{
@@ -142,6 +155,7 @@ ul{
 .details{
     font-size: 20px;
     font-weight: 400;
+    color: white;
 }
 
 .infinite-scroll{
