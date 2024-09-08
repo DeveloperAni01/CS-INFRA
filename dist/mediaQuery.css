@@ -47,7 +47,7 @@
 
 
 /* Media query for small devices (less than 400px width) */
-@media (width<= 375px) {
+@media (width<= 320px) {
     html, body {
         overflow-x: scroll; /* Allow horizontal scrolling */
     }
