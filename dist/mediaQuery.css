@@ -1,86 +1,208 @@
-
-
-@media screen and (width <= 950px) {
+@media screen and (max-width: 950px) {
     .hambarger {
         display: block;
         margin-right: 50px;
         font-size: 2rem;
     }
-    .logo{
+    .logo {
         margin-left: 50px;
+        font-weight: 600;
     }
-    .nav-links{
+    .nav-links, .contact-button {
         display: none;
     }
-    .contact-button{
-        display: none;
-    }
-    .navBar{
+    .navBar {
         justify-content: space-between;
     }
-    .header-content{
+    .header-content {
         line-height: 50px;
     }
-    .header-content .logoImg{
-        height:150px;
+    .header-content .logoImg {
+        height: 150px;
         width: 100px;
     }
-    .intro-font{
-        font-size: 7vw;
+    .intro-font {
+        font-size: 6vw;
     }
-    .welcome-font{
-        font-size: 2.5vw;
+    .welcome-font {
+        font-size: 1.2rem;
         font-weight: 500;
     }
-    .details{
+    .details {
         font-size: 2vw;
         font-weight: 500;
     }
-    .sidebar{
+    .sidebar {
         padding-top: 10vw;
     }
-    
 }
 
-
-
-
-
-/* Media query for small devices (less than 400px width) */
-@media (width<= 320px) {
-    html, body {
-        overflow-x: scroll; /* Allow horizontal scrolling */
-    }
-
-    .headerSection {
-        width: 120vw; /* Increase the width to cause horizontal overflow */
-        overflow-x: hidden; /* Ensures horizontal scrolling */
-    }
-
-    .navBar {
-        width: 120vw; /* Ensure navbar extends horizontally */
-    }
-
-    .sidebar {
-        width: 100vw; /* Adjust sidebar width */
-    }
-
-    .header-content {
-        width: 120vw; /* Extend content width to create overflow */
-    }
-
+@media screen and (max-width: 1024px){
     .intro-font {
-        font-size: 10vw; /* Adjust font-size for better fit on small screens */
+        font-size: 6vw;
+        font-weight: 800;
     }
 
     .welcome-font {
-        font-size: 3rem;
+        font-size: 2.5vw;
+        font-weight: 500;
     }
-
-    .contact-button {
-        font-size: large;
+    .details {
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+    .sidebar {
+        padding-top: 10vw;
+    }
+    .navBar .nav-links .ul{
+        font-size: medium;
     }
 }
 
+/* Media query for small devices (less than or equal to 400px width) */
+@media screen and (max-width: 425px) {
+    html, body {
+        overflow-x: hidden;
+    }
 
+    .headerSection, .navBar, .header-content {
+        width: 100vw;
+    }
 
+    .hambarger{
+        margin-right: 2px;
+    }
+
+    .logo{
+        margin-left: 5px;
+        font-weight: 600;
+    }
+
+    .sidebar {
+        width: 100vw;
+    }
+
+    .intro-font {
+        font-size: 8vw;
+    }
+
+    .welcome-font {
+        font-size: 4vw;
+    }
+
+    .details{
+        font-size: 4vw;
+    }
+
+    .contact-button {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* Media query for extra small devices (less than or equal to 320px width) */
+@media screen and (max-width: 320px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .headerSection, .navBar, .header-content, .sidebar {
+        width: 100vw;
+    }
+
+    .intro-font {
+        font-size: 9vw;
+    }
+
+    .welcome-font {
+        font-size: 2rem;
+    }
+
+    .contact-button {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
+/* Media query for large screens, targeting monitors like 26-28 inch screens (2560px to 3840px) */
+@media screen and (min-width: 2560px) {
+    /* Increase overall font sizes for readability on large screens */
+    .intro-font {
+        font-size: 10vw;  /* Larger fonts for the main header */
+    }
+
+    .welcome-font {
+        font-size: 3rem;  /* Increase sub-heading font size */
+    }
+
+    .details {
+        font-size: 2rem;  /* Ensure details are larger */
+    }
+
+    .navBar {
+        padding: 20px 50px;  /* Add more padding to the navbar for a balanced look */
+        font-size: 1.5rem;  /* Increase font size in the navbar links */
+    }
+
+    .sidebar {
+        width: 25vw;  /* Adjust sidebar width */
+        padding: 5vw;  /* Increase padding in the sidebar for better use of space */
+    }
+
+    .header-content {
+        max-width: 75%;  /* Restrict header content width so it doesn’t stretch too much */
+    }
+
+    /* Adjust the size of buttons to ensure they don't appear too small */
+    button {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+}
+
+/* Media query for extra-large screens (greater than 3840px, for example, 4K or ultrawide monitors) */
+@media screen and (min-width: 3840px) {
+    .intro-font {
+        font-size: 12vw;  /* Even larger fonts for ultrawide/4K screens */
+    }
+
+    .welcome-font {
+        font-size: 3.5rem;  /* Further increase sub-heading font size */
+    }
+
+    .details {
+        font-size: 2.5rem;  /* Ensure readability of smaller text */
+    }
+
+    .navBar {
+        padding: 30px 60px;  /* More padding in navbar */
+        font-size: 1.8rem;  /* Larger font size in the navbar */
+    }
+
+    .sidebar {
+        width: 20vw;  /* Adjust sidebar width for ultra-wide screens */
+        padding: 6vw;  /* Adjust padding for a spacious layout */
+    }
+
+    .header-content {
+        max-width: 60%;  /* Restrict header content width for better balance */
+    }
+
+    button {
+        font-size: 1.5rem;  /* Ensure buttons are appropriately large */
+        padding: 20px 25px;  /* Adjust padding for buttons */
+    }
+    
+    .contact-button {
+        font-size: 1.5rem;
+        padding: 15px 25px;
+    }
+}

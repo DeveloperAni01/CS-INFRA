@@ -15,7 +15,7 @@ html,body{
 
 
 .fullScreen{
-    width: 100%;
+    width: 100vw;
 }
 
 a{
@@ -32,6 +32,11 @@ a{
     overflow: hidden;
 }
 
+.hover-links{
+  font-weight: 500;
+  
+}
+
 .backgroundVideo {  /*change*/
     position: absolute;
     top: 0;
@@ -45,7 +50,8 @@ a{
  .navBar{
     padding: 10px 20px; /*change*/
     width: 100%;
-    background-color: rgba(162, 162, 167, 0.598);
+    background-color: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(50px);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -118,7 +124,6 @@ ul{
 .header-content{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
     top: 50%;
     left: 50%;
@@ -133,7 +138,7 @@ ul{
 }
 
 .intro-font{
-    font-size: 7rem;
+    font-size: 7.2rem;
     font-family: 'poppins';
     font-weight: bold;
     color: white;
@@ -141,7 +146,7 @@ ul{
 
 .welcome-font{
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: medium;
     color: white;
 }
 
@@ -151,7 +156,7 @@ ul{
 
 .details{
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: medium;
     color: white;
 }
 
@@ -162,7 +167,7 @@ ul{
 /* get in touch */
 
 .contact_us_green * {
-    font-family: Nunito, sans-serif;
+    font-family: Poppins, sans-serif;
   }
 
 
