@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'poppins', 'sans-serif';
+    overflow-x: hidden;
+}
+
+.fullScreen{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(20, 3, 3);
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.headerSection{
+    position: relative;
+    height: 100vh;
+    width:100%;
+    overflow: hidden;
+}
+
+.backgroundVideo {
+    position: absolute;       /* Position video absolutely within .headerSection */
+    top: 50%;                 /* Center vertically */
+    left: 50%;                /* Center horizontally */
+    min-width: 100%;          /* Ensure it covers the width */
+    min-height: 100%;         /* Ensure it covers the height */
+    width: auto;              /* Maintain aspect ratio */
+    height: auto;             /* Maintain aspect ratio */
+    z-index: -1;              /* Place the video behind the content */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover;        /* Ensures video fills the area without distortion */
+}
+
+ .navBar{
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgba(162, 162, 167, 0.598);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.sidebar{
+    position: fixed;
+    display:none;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 4vw 5vw ;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.377);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.sidebar-links{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10vh;
+}
+.side-contact-button{
+    font-size: medium;
+    font-weight: 500;
+    border-color: black;
+    padding: 10px;
+    text-align: center;
+
+}
+.cross-btn{
+    position:absolute;
+    font-size: 50px;
+    right: 35px;
+    top: 0;
+}
+
+
+
+
+
+ .logo{
+    font-size: 2.5rem;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    
+}
+ .contact-button{
+    font-size: medium;
+    font-weight: 500;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 2vw;
+    text-align: center;
+
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    line-height: 12.5vh;
+    z-index: 1;
+}
+
+.header-content .logoImg{
+    height:200px;
+    width: 150px;
+}
+
+.intro-font{
+    font-size: 8vw;
+    font-family: 'poppins';
+    font-weight: 400;
+    color: white;
+}
+
+.welcome-font{
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.hambarger{
+    display: none;
+}
+
+.details{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.infinite-scroll{
+    
+}
+
+
+
+    

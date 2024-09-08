@@ -18,4 +18,9 @@ hamburger.onclick = () => {
 cross.onclick = () => {
     hideSidebar()
 }
+
+
+// get in touch
+
+
     

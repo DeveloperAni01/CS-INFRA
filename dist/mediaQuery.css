@@ -1,3 +1,11 @@
+@media (max-width: 350px) {
+    html, body {
+        overflow-x: auto; /* Allow horizontal scrolling */
+        width: 100vw; /* Ensure the body takes full viewport width */
+    }
+}
+
+
 @media screen and (width <= 950px) {
     .hambarger {
         display: block;
@@ -20,8 +28,8 @@
         line-height: 50px;
     }
     .header-content .logoImg{
-        height: 20vh;
-        width: 15vw;
+        height:200px;
+        width: 150px;
     }
     .intro-font{
         font-size: 7vw;
@@ -44,3 +52,38 @@
 
 
 
+/* Media query for small devices (less than 400px width) */
+@media (width<= 400px) {
+    html, body {
+        overflow-x: scroll; /* Allow horizontal scrolling */
+    }
+
+    .headerSection {
+        width: 120vw; /* Increase the width to cause horizontal overflow */
+        overflow-x: hidden; /* Ensures horizontal scrolling */
+    }
+
+    .navBar {
+        width: 120vw; /* Ensure navbar extends horizontally */
+    }
+
+    .sidebar {
+        width: 100vw; /* Adjust sidebar width */
+    }
+
+    .header-content {
+        width: 120vw; /* Extend content width to create overflow */
+    }
+
+    .intro-font {
+        font-size: 10vw; /* Adjust font-size for better fit on small screens */
+    }
+
+    .welcome-font {
+        font-size: 3rem;
+    }
+
+    .contact-button {
+        font-size: large;
+    }
+}
