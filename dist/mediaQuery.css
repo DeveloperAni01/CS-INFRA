@@ -22,8 +22,8 @@
         line-height: 50px;
     }
     .header-content .logoImg{
-        height:200px;
-        width: 150px;
+        height:150px;
+        width: 100px;
     }
     .intro-font{
         font-size: 7vw;
@@ -88,3 +88,4 @@
         width: 150px;
     }
 }
+
