@@ -132,10 +132,14 @@
 
 .swiper-button-next {
   right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .swiper-button-prev {
   left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .swiper-pagination-bullet {
