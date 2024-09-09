@@ -1,0 +1,62 @@
+/* Responsive Carousel Styles */
+
+/* Default (large screens) shows 4 slides */
+.carousel-slide {
+    flex: 0 0 25%; /* Show 4 slides at a time */
+  }
+  
+  /* For screens with max width of 1024px (medium screens like small laptops or large tablets) */
+  @media (max-width: 1024px) {
+    .carousel-slide {
+      flex: 0 0 33.33%; /* Show 3 slides at a time */
+    }
+  
+    .carousel-slide img {
+      width: 80%; /* Slightly reduce logo size */
+    }
+  }
+  
+  /* For tablet screens (max width 768px) */
+  @media (max-width: 768px) {
+    .carousel-slide {
+      flex: 0 0 50%; /* Show 2 slides at a time */
+    }
+  
+    .carousel-slide img {
+      width: 70%; /* Further reduce logo size to fit 2 slides */
+    }
+  }
+  
+  /* For mobile screens (max width 480px) */
+  @media (max-width: 480px) {
+    .carousel-slide {
+      flex: 0 0 100%; /* Show 1 slide at a time */
+    }
+  
+    .carousel-slide img {
+      width: 60%; /* Reduce logo size even more to fit 1 slide */
+    }
+  
+    /* Adjust the size of the arrow buttons for smaller screens */
+    .prev, .next {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  /* For very small screens (under 400px) */
+  @media (max-width: 400px) {
+    .carousel-div {
+      height: 25vh; /* Increase height to accommodate */
+    }
+  
+    .carousel-slide img {
+      width: 50%; /* Shrink the logo further on very small screens */
+    }
+  
+    .prev, .next {
+      font-size: 12px; /* Smaller arrows */
+      padding: 6px;
+    }
+  }
+  

@@ -209,3 +209,9 @@ body {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 320px){
+  .contact-text {
+    font-size: 30px;
+  }
+}

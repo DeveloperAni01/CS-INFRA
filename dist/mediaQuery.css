@@ -60,7 +60,7 @@
 }
 
 /* Media query for small devices (less than or equal to 400px width) */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     html, body {
         overflow-x: hidden;
     }
@@ -80,6 +80,7 @@
 
     .sidebar {
         width: 100vw;
+        backdrop-filter: blur(20px);
     }
 
     .intro-font {
@@ -108,9 +109,14 @@
 /* Media query for extra small devices (less than or equal to 320px width) */
 @media screen and (max-width: 320px) {
     html, body {
-        overflow-x: hidden;
+        overflow-x: scroll;
     }
-
+    .fullScreen{
+        width: 100vw; /* Override to ensure no overflow */
+        min-width: 100vw; /* Keep as is, but ensure no extra space is added */
+        box-sizing: border-box; /* Prevent overflow due to padding or borders */
+        overflow: hidden; 
+    }
     .headerSection, .navBar, .header-content, .sidebar {
         width: 100vw;
     }
@@ -130,6 +136,8 @@
     button {
         padding: 12px;
     }
+
+    
 }
 
 /* Media query for large screens, targeting monitors like 26-28 inch screens (2560px to 3840px) */

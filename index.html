@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="./dist/styles.css" />
     <link rel="stylesheet" href="./dist/crausel.css" />
+    <link rel="stylesheet" href="./dist/responsive-crausel.css">
     <link rel="stylesheet" href="./dist/mediaQuery.css" />
     <link rel="stylesheet" href="./dist/about-style.css">
     <link rel="stylesheet" href="./dist/response_style.css">
+    <link rel="stylesheet" href="./dist/our-services.css">
+    <link rel="stylesheet" href="./dist/major-achievement.css">
     <link rel="stylesheet" href="./dist/get-in-touch.css">
   </head>
   <body>
@@ -19,9 +24,9 @@
         <video autoplay muted loop playsinline class="backgroundVideo">
           <source src="./assets/WhatsApp Video 2024-09-07 at 00.32.12.mp4" type="video/mp4">
 
-      </video>
-        <!-- Navigation Bar -->
-        <nav class="navBar" id="navAni">
+          </video>
+          <!-- Navigation Bar -->
+          <nav class="navBar" id="navAni">
           <div class="logo">CS INFRA</div>
           <div class="nav-links">
             <ul>
@@ -31,12 +36,12 @@
               <li><a href="#" class="hover-links">Major Achievements</a></li>
             </ul>
           </div>
-          <div class="contact-button"><a href="">Contact Us</a></div>
+          <div class="contact-button"><a href="#contact">Contact Us</a></div>
           <a href="#" class="hambarger hover-links" id="hamburger"
             ><i class="fa-solid fa-bars"></i
           ></a>
-        </nav>
-        <div class="sidebar">
+          </nav>
+          <div class="sidebar">
           <a href="#" class="cross-btn hover-links" id="cross"
             ><i class="fa-solid fa-xmark"></i
           ></a>
@@ -45,7 +50,7 @@
             <li><a href="#" class="hover-links">Services</a></li>
             <li><a href="#" class="hover-links">Clients</a></li>
             <li><a href="#" class="hover-links">Major Achievements</a></li>
-            <div class="side-contact-button"><a href="">Contact Us</a></div>
+            <div class="side-contact-button"><a href="#contact">Contact Us</a></div>
           </ul>
         </div>
         <div class="header-content">
@@ -58,19 +63,44 @@
           <h1 class="intro-font">CS INFRA</h1>
           <h3 class="details">A TRUSTED NAME IN ROAD SAFETY</h3>
         </div>
-        <div class="carousel basic">
-          <div class="group">
-              <div class="card">A</div>
-              <div class="card">B</div>
-              <div class="card">C</div>
-              <div class="card">D</div>
-              <div class="card">E</div>
-              <div class="card">F</div>
-              <div class="card">G</div>
-              <div class="card">H</div>
-          </div>
-      </div>
       </header>
+      <div class="carousel-container carousel-div" style="margin-top: 20px;">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+
+        <div class="carousel">
+          <div class="carousel-slide">
+            <img src="./assets/Daco_3987834.png" alt="Logo 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/Daco_3987834.png" alt="Logo 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 3">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 4">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 5">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 6">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 7">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 8">
+          </div>
+        </div>
+
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+      <!-- End of carousel -->
+
+
+
+      <!-- about us section -->
       <div class="responsive-container-block bigContainer">
         <div class="responsive-container-block Container bottomContainer">
             <div class="allText bottomText">
@@ -98,7 +128,7 @@
                 </p>
                 <a>
                     
-                        <a href="./assets/CS_Brochure.pdf" target="_blank" download="./assets/CS_Brochure.pdf" class="view-more-btn"> <button class="explore">View more</button></a>
+                        <a href="./assets/csinfraNew.pdf" target="_blank" download="./assets/csinfraNew.pdf" class="view-more-btn"> <button class="explore">View more</button></a>
                     
                    
                 </a>
@@ -110,12 +140,189 @@
             </div>
         </div>
 
+        <!-- our services -->
+
+        <div class="slide-container swiper">
+          <h1 >Our Services</h1>
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Road Marking</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+      
+                 
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Hot Thermoplastic</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+      
+                
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Cold Thermoplastic</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+      
+                 
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">2k cold plastic paint Rumble Strip</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+      
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Audible Vibratiry Marking</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+      
+                  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Raised Pavement Markers</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+      
+                  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Roadway Maintainance Service</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+      
+                  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">3M Rectro Refflective Signage</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <!-- <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+      
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+        <!-- major achievements -->
+
+        <div class="container">
+          <h2>Major Achievements</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nibh arcu. Donec laoreet mauris quis nibh pretium rhoncus.</p>
+          <div class="image-grid">
+              <img src="./assets/029efcc4-cefa-4734-a51a-52c0d91f44fb.jpg" alt="Image 1">
+              <img src="./assets/road2.jpg" alt="Image 2">
+              <img src="https://via.placeholder.com/400x300" alt="Image 3">
+              <img src="https://via.placeholder.com/400x300" alt="Image 4">
+              <img src="https://via.placeholder.com/400x300" alt="Image 3">
+              <img src="https://via.placeholder.com/400x300" alt="Image 4">
+          </div>
+        </div>
         <!-- get in touch -->
 
-        <div class="contact_us_green">
+        <div class="contact_us_green" id="contact" style=" margin-top: 50px;">
           <div class="responsive-container-block big-container">
             <div class="responsive-container-block container">
-              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b-2">
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b-2" style="padding-right: 0px;">
                 <form class="form-box" action="https://formspree.io/f/mwpezylg"
                 method="POST">
                   <div class="container-block form-wrapper">
@@ -123,7 +330,7 @@
                       <p class="text-blk contactus-head">
                         Contact us
                       </p>
-                      <p class="text-blk contactus-subhead">
+                      <p class="text-blk contactus-subhead" style="text-align: center; font-size: medium;">
                         Get In Touch With Us ! We Are Always Here To Give You World class Services.
                       </p>
                     </div>
@@ -160,7 +367,7 @@
                       </div>
                     </div>
                     <div class="btn-wrapper">
-                      <button class="submit-btn">
+                      <button class="submit-btn" style="background-color: blue;">
                         Submit
                       </button>
                     </div>
@@ -195,8 +402,7 @@
                       <div class="mail text-box">
                        <a href="https://maps.app.goo.gl/qPybKwG5NpBA86Jv7" target="_blank"> <i class="fa-solid fa-location-dot contact-svg"></i></a>
                         <p class="contact-text">
-                          5/17, Buroshibtola Main Road
-Kolkata 700 038
+                          5/17, Buroshibtola Main Road Kolkata 700 038
                         </p>
                       </div>
                       <div class="mail text-box">
@@ -224,7 +430,11 @@ Kolkata 700 038
       src="https://kit.fontawesome.com/d71d14af0f.js"
       crossorigin="anonymous"
     ></script>
+   <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./dist/script.js"></script>
     <script src="./dist/main.js"></script>
+    <script src="./dist/services.js"></script>
+    
   </body>
 </html>
