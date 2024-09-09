@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./dist/our-services.css">
     <link rel="stylesheet" href="./dist/major-achievement.css">
     <link rel="stylesheet" href="./dist/get-in-touch.css">
+    <link rel="stylesheet" href="./dist/footer.css">
   </head>
   <body>
     <div class="fullScreen">
@@ -30,10 +31,10 @@
           <div class="logo">CS INFRA</div>
           <div class="nav-links">
             <ul>
-              <li><a href="#" class="hover-links">About us</a></li>
-              <li><a href="#" class="hover-links">Services</a></li>
-              <li><a href="#" class="hover-links">Clients</a></li>
-              <li><a href="#" class="hover-links">Major Achievements</a></li>
+              <li><a href="#about" class="hover-links">About us</a></li>
+              <li><a href="#service" class="hover-links">Services</a></li>
+              <li><a href="#client" class="hover-links">Clients</a></li>
+              <li><a href="#achievements" class="hover-links">Major Achievements</a></li>
             </ul>
           </div>
           <div class="contact-button"><a href="#contact">Contact Us</a></div>
@@ -46,10 +47,10 @@
             ><i class="fa-solid fa-xmark"></i
           ></a>
           <ul class="sidebar-links">
-            <li><a href="#" class="hover-links">About Us</a></li>
-            <li><a href="#" class="hover-links">Services</a></li>
-            <li><a href="#" class="hover-links">Clients</a></li>
-            <li><a href="#" class="hover-links">Major Achievements</a></li>
+            <li><a href="#about" class="hover-links">About Us</a></li>
+            <li><a href="#service" class="hover-links">Services</a></li>
+            <li><a href="#client" class="hover-links">Clients</a></li>
+            <li><a href="#achievements" class="hover-links">Major Achievements</a></li>
             <div class="side-contact-button"><a href="#contact">Contact Us</a></div>
           </ul>
         </div>
@@ -64,27 +65,29 @@
           <h3 class="details">A TRUSTED NAME IN ROAD SAFETY</h3>
         </div>
       </header>
-      <div class="carousel-container carousel-div" style="margin-top: 20px;">
+
+      <!-- crausel -->
+      <div class="carousel-container carousel-div" style="margin-top: 20px;" id="client">
         <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
 
         <div class="carousel">
           <div class="carousel-slide">
-            <img src="./assets/Daco_3987834.png" alt="Logo 1">
+            <img src="./assets/1.png" alt="Logo 1">
           </div>
           <div class="carousel-slide">
-            <img src="assets/Daco_3987834.png" alt="Logo 2">
+            <img src="./assets/2.png" alt="Logo 2">
           </div>
           <div class="carousel-slide">
-            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 3">
+            <img src="./assets/3.png" alt="Logo 3">
           </div>
           <div class="carousel-slide">
-            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 4">
+            <img src="./assets/4.png" alt="Logo 4">
           </div>
           <div class="carousel-slide">
-            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 5">
+            <img src="./assets/5.png" alt="Logo 5">
           </div>
           <div class="carousel-slide">
-            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 6">
+            <img src="./assets/6.png" alt="Logo 6">
           </div>
           <div class="carousel-slide">
             <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 7">
@@ -101,7 +104,7 @@
 
 
       <!-- about us section -->
-       <div class="responsive-container-block bigContainer">
+       <div class="responsive-container-block bigContainer" id="about">
         <div class="responsive-container-block Container bottomContainer">
             <div class="allText bottomText">
                 <p class="text-blk headingText">
@@ -146,7 +149,7 @@
       </div>
 
         <!-- our services -->
-        <div class="slide-container swiper" style="margin-inline: auto;">
+        <div class="slide-container swiper" style="margin-inline: auto;" id="service">
           <h1 >Our Services</h1>
           <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
@@ -282,17 +285,18 @@
         </div>
       </div>
 
+
          <!-- major achievements -->
-         <div class="container">
-          <h2>Major Achievements</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at nibh arcu. Donec laoreet mauris quis nibh pretium rhoncus.</p>
+        <div class="container" id="achievements">
+          <h1 id="major">Major Achievements</h1> 
+          <p>From precision road markings to large-scale infrastructure projects, CS INFRA has consistently delivered excellence on every surface. Our major achievements showcase a legacy of innovation, safety, and quality across the nation's roads.</p>
           <div class="image-grid">
               <img src="./assets/029efcc4-cefa-4734-a51a-52c0d91f44fb.jpg" alt="Image 1 "class="galary-img">
               <img src="./assets/roadpic.jpg" alt="Image 2" class="galary-img">
               <img src="./assets/roadpic4.jpg" alt="Image 3" class="galary-img">
-              <img src="./assets/roadpic3.jpg" alt="Image 4" class="galary-img">
-              <img src="https://via.placeholder.com/400x300" alt="Image 3" class="galary-img">
-              <img src="./assets/roadpic2.jpg" alt="Image 4" class="galary-img">
+              <img src="./assets/renewpic.jpg" alt="Image 4" class="galary-img">
+              <!-- <img src="https://via.placeholder.com/400x300" alt="Image 3" class="galary-img">
+              <img src="./assets/roadpic2.jpg" alt="Image 4" class="galary-img"> -->
           </div>
         </div>
 
@@ -305,7 +309,7 @@
                   method="POST">
                     <div class="container-block form-wrapper">
                       <div class="head-text-box">
-                        <p class="text-blk contactus-head">
+                        <p class="text-blk contactus-head" >
                           Contact us
                         </p>
                         <p class="text-blk contactus-subhead" style="text-align: center; font-size: medium;">
@@ -397,6 +401,44 @@
             </div>
           </div>
 
+          <!-- Footer -->
+        <footer>
+      <div class="container">
+          <div class="row">
+              <div class="column">
+                  <h3>About Us</h3>
+                  <p>Clients</p>
+                  <p>Major Achievements</p>
+                  <p>Recognition</p>
+              </div>
+              <div class="column">
+                  <h3>INFRA</h3>
+                  <p>Road Marking</p>
+                  <p>Hot Thermoplastic</p>
+                  <p>Cold Thermoplastic</p>
+                  <p>2K Cold Plastic Paint Rumble Strip</p>
+                  <p>Audible Vibratory Marking</p>
+              </div>
+              <div class="column">
+                  <h3>Services</h3>
+                  <p>Raised Pavement Markers</p>
+                  <p>Roadway Maintenance Service</p>
+                  <p>3M Retro Reflective Signage</p>
+                  <p>(3M Converter. Authorised Digital Printing HP - Latex 3M Authorised)</p>
+              </div>
+              <div class="column images">
+                  <img src="./assets/C S Infra-TSD-Cert'23 (1)_page-0001.jpg" alt="Certificate">
+                  <img src="./assets/C S INFRA - Authorized Distributor_Project Partner Certificate-23-24 (1) (1)_page-0001.jpg" alt="Certificate">
+              </div>
+          </div>
+      </div>
+      <hr style="height: 2px; width: 100%;">
+      <div class="footer-bottom">
+          <p>&copy; 2024. All Rights Reserved | <a href="#">Sitemap</a> | <a href="#">Privacy Policy</a></p>
+          
+      </div>
+        </footer>
+
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -413,6 +455,5 @@
     <script src="./dist/script.js"></script>
     <script src="./dist/main.js"></script>
     <script src="./dist/services.js"></script>
-    
   </body>
 </html>
