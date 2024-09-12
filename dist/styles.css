@@ -259,12 +259,12 @@ ul{
   }
   
   .contact_us_green .text-blk.contactus-head {
-    font-size: 40px;
+    font-size: 3rem;
     line-height: 40px;
     font-weight: 700;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     margin-left: 0px;
   }
   
@@ -455,9 +455,9 @@ ul{
   }
   
   .contact_us_green .line {
-    border-right-width: 1.8px;
-    border-right-style: solid;
-    border-right-color: #a2a2a2;
+    border-left-width: 1.8px;
+    border-left-style: solid;
+    border-left-color: #3f3f3f;
   }
   
   .contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-7.wk-ipadp-10.line {
@@ -491,13 +491,9 @@ ul{
     }
   
     .contact_us_green .line {
-      border-right-width: initial;
-      border-right-style: none;
-      border-right-color: initial;
-      border-bottom-width: 1.8px;
-      border-bottom-style: solid;
-      border-bottom-color: #a2a2a2;
-    }
+      border-left: none;
+      
+  }
   
     .contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
       margin-top: 60px;
@@ -532,7 +528,8 @@ ul{
     }
   
     .contact_us_green .text-blk.contactus-head {
-      font-size: 30px;
+      font-size: 3rem;
+      
     }
   }
   

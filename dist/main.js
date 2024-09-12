@@ -20,6 +20,17 @@ cross.onclick = () => {
 }
 
 // get in touch section js
+function updateReachUsVisibility() {
+  const reachUsElement = document.querySelector('.reach-us');
+  if (window.innerWidth <= 1024) {
+    reachUsElement.style.display = 'block';
+  } else {
+    reachUsElement.style.display = 'none';
+  }
+}
+
+document.addEventListener("DOMContentLoaded", updateReachUsVisibility);
+window.addEventListener('resize', updateReachUsVisibility);
 
 // Get the number of visible slides based on screen width
 function getVisibleSlides() {

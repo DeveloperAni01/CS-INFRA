@@ -70,12 +70,12 @@ h1 {
 }
 
 /* Paragraph below the heading */
-.container p {
-    font-size: 1.1rem;
+ #para {
+    font-size: 1.3rem;
     text-align: center;
     color: #000000;
-    margin-bottom: 40px;
-    padding: 0 20px; /* Add padding to give some breathing room on small screens */
+    margin-bottom: 20px;
+    padding: 0 70px; /* Add padding to give some breathing room on small screens */
 }
 
 /* Image grid layout */
@@ -111,7 +111,7 @@ figcaption {
     h1 {
         font-size: 2.2rem; /* Slightly smaller heading on tablets */
     }
-    .container p {
+    #para {
         font-size: 1rem;
     }
 }
@@ -124,8 +124,8 @@ figcaption {
         font-size: 2rem; /* Smaller heading for mobile */
         margin-bottom: 15px; /* Adjust spacing for smaller screens */
     }
-    .container p {
-        font-size: 0.95rem;
+    #para{
+        font-size: 1.2rem;
     }
 }
 
@@ -137,8 +137,8 @@ figcaption {
         font-size: 1.7rem; /* Even smaller heading for very small screens */
         margin-bottom: 10px;
     }
-    .container p {
-        font-size: 0.9rem;
+    #para  {
+        font-size: 1rem;
         padding: 0 15px; /* More padding for smaller screens */
     }
 }
@@ -155,7 +155,7 @@ figcaption {
         word-break: break-word; /* Prevents words from breaking improperly */
        
     }
-    .container p {
+    #para {
         font-size: 0.9rem;
         padding: 0 15px; /* More padding for smaller screens */
     }

@@ -641,7 +641,7 @@
 }
 
 .text-blk.description {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
   color: rgb(0, 0, 0);
   padding-top: 0px;
@@ -658,7 +658,7 @@
   font-size: 18px;
   line-height: 28px;
   color: rgb(255, 255, 255);
-  background-color: rgb(244, 152, 146);
+  background-color: rgb(63, 69, 151);
   border-top-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 0px;
@@ -667,10 +667,10 @@
   border-right-style: outset;
   border-bottom-style: outset;
   border-left-style: outset;
-  border-top-color: rgb(244, 152, 146);
-  border-right-color: rgb(244, 152, 146);
-  border-bottom-color: rgb(244, 152, 146);
-  border-left-color: rgb(244, 152, 146);
+  border-top-color: rgb(0, 68, 255);
+  border-right-color: rgb(0, 17, 255);
+  border-bottom-color: rgb(0, 68, 255);
+  border-left-color: rgb(0, 17, 255);
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;
@@ -699,7 +699,7 @@
   background-origin: initial;
   background-clip: initial;
   background-color: rgb(255, 235, 234);
-  color: rgb(244, 152, 146);
+  color: rgb(0, 68, 255);
 }
 
 .responsive-container-block.Container {
