@@ -64,3 +64,30 @@
 .next {
   right: 10px; /* Position slightly away from the right edge */
 }
+
+
+/* For larger screens (1025px and above) */
+.carousel-slide {
+  flex: 0 0 25%; /* Show 4 slides at a time */
+}
+
+/* For screens <= 1024px */
+@media (max-width: 1024px) {
+  .carousel-slide {
+    flex: 0 0 33.33%; /* Show 3 slides at a time */
+  }
+}
+
+/* For screens <= 768px */
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 50%; /* Show 2 slides at a time */
+  }
+}
+
+/* For screens <= 425px */
+@media (max-width: 425px) {
+  .carousel-slide {
+    flex: 0 0 100%; /* Show 1 slide at a time */
+  }
+}

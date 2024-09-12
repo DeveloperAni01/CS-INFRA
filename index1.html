@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./dist/styles.css" />
+    <link rel="stylesheet" href="./dist/crausel.css" />
+    <link rel="stylesheet" href="./dist/responsive-crausel.css">
+    <link rel="stylesheet" href="./dist/mediaQuery.css" />
+    <link rel="stylesheet" href="./dist/about-style.css">
+    <link rel="stylesheet" href="./dist/response_style.css">
+    <link rel="stylesheet" href="./dist/our-services.css">
+    <link rel="stylesheet" href="./dist/major-achievement.css">
+    <link rel="stylesheet" href="./dist/get-in-touch.css">
+    <link rel="stylesheet" href="./dist/footer.css">
+  </head>
+  <body>
+    <div class="fullScreen">
+      <header class="headerSection">
+        <video autoplay muted loop playsinline class="backgroundVideo">
+          <source src="./assets/WhatsApp Video 2024-09-07 at 00.32.12.mp4" type="video/mp4">
+
+          </video>
+          <!-- Navigation Bar -->
+          <nav class="navBar" id="navAni">
+          <div class="logo"></div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="#about" class="hover-links">About us</a></li>
+              <li><a href="#service" class="hover-links">Services</a></li>
+              <li><a href="#client" class="hover-links">Clients</a></li>
+              <li><a href="#achievements" class="hover-links">Major Achievements</a></li>
+            </ul>
+          </div>
+          <div class="contact-button"><a href="#contact">Contact Us</a></div>
+          <a href="#" class="hambarger hover-links" id="hamburger"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+          </nav>
+          <div class="sidebar">
+          <a href="#" class="cross-btn hover-links" id="cross"
+            ><i class="fa-solid fa-xmark"></i
+          ></a>
+          <ul class="sidebar-links">
+            <li><a href="#about" class="hover-links">About Us</a></li>
+            <li><a href="#service" class="hover-links">Services</a></li>
+            <li><a href="#client" class="hover-links">Clients</a></li>
+            <li><a href="#achievements" class="hover-links">Major Achievements</a></li>
+            <div class="side-contact-button"><a href="#contact">Contact Us</a></div>
+          </ul>
+        </div>
+        <div class="header-content">
+          <img
+            src="./assets/newlogo.png"
+            class="logoImg"
+            alt="company-logo"
+          />
+          <h2 class="welcome-font">WELCOME TO</h2>
+          <h1 class="intro-font">CS INFRA</h1>
+          <h3 class="details">A TRUSTED NAME IN ROAD SAFETY</h3>
+        </div>
+      </header>
+      <h1 style="text-align: center; font-size: 2 rem; font-family: Poppins; margin-top: 20px;" id="client">Our clients</h1>
+      <br>
+      <br>
+      <!-- crausel -->
+      <div class="carousel-container carousel-div" style="margin-top: 20px;" >
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel">
+          <div class="carousel-slide">
+            <img src="./assets/1.png" alt="Logo 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/2.png" alt="Logo 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/3.png" alt="Logo 3">
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/4.png" alt="Logo 4">
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/5.png" alt="Logo 5">
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/6.png" alt="Logo 6">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 7">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.pexels.com/photos/430205/pexels-photo-430205.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Logo 8">
+          </div>
+        </div>
+
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+      <!-- End of carousel -->
+
+
+
+      <!-- about us section -->
+       <div class="responsive-container-block bigContainer" id="about">
+        <div class="responsive-container-block Container bottomContainer">
+            <div class="allText bottomText">
+                <p class="text-blk headingText">
+                   <h1 style="text-align: center; margin-bottom: 30px;">About Us</h1> 
+                </p>
+              
+                <p class="text-blk description" style="text-align: start;">
+                    Road safety remains a concern for Indian citizens mainly because the indifferent attitude of public 
+                    while negotiating with the roads and absence of proper instruments which will enhance the safety measures.
+                    Road safety measures are unexplored area but it should be given topmost priority to save lives & avoid 
+                    other casualties.
+                    <br>
+                    <br>
+                    CS INFRA started its journey about 5 years ago with a motive of developing newer ideas regarding road 
+                    safety & successful implementation of those. Till today, CS INFRA has successfully implemented 400+ projects 
+                    all over West Bengal and other parts of India, entrusted upon them by leading Govt & private companies. 
+                    Being the distributor of 3M & Kataline products, they are encouraging other agencies to come up and contribute 
+                    themselves in the work of safety.
+                    <br>
+                    <br>
+                    CS INFRA always thrives for excellence and believes in 'service before self'. Today it has marked itself as 
+                    a pioneer in the field of road safety. For them, the sky is the limit with many more things to do and it vows 
+                    to carry the button forward.
+                </p>
+                <a>
+                    
+                        <a href="./assets/csinfraNew.pdf" target="_blank" download="./assets/csinfraNew.pdf" class="view-more-btn"> <button class="explore">View more</button></a>
+                    
+                   
+                </a>
+            </div>
+            <div class="videoContainer">
+                <video autoplay muted loop playsinline src="./assets/3992-176171691_small.mp4" class="mainVideo"></video>
+                <img class="dotsImg image-block"
+                    src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/cw3.svg">
+            </div>
+          </div>
+
+        
+
+        </div>
+
+        <!-- our services -->
+        <div class="slide-container swiper" style="margin-inline: auto;" id="service">
+          <h1 >Our Services</h1>
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Road Marking</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Hot Thermoplastic</h2>
+      
+                
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Cold Thermoplastic</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">2k cold plastic paint Rumble Strip</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Audible Vibratiry Marking</h2>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Raised Pavement Markers</h2>
+                  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">Roadway Maintainance Service</h2>
+                  
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">3M Rectro Refflective Signage</h2>
+                </div>
+              </div>
+              <!-- <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+      
+                  <div class="card-image">
+                    <img src="https://images.pexels.com/photos/56832/road-asphalt-space-sky-56832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="card-img">
+                  </div>
+                </div>
+      
+                <div class="card-content">
+                  <h2 class="name">David Dell</h2>
+                  <p class="description">The lorem text the section that contains header with having open functionality. Lorem
+                    dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+      
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+
+         <!-- major achievements -->
+        <div class="container" id="achievements">
+          <h1 id="major">Major Achievements</h1> 
+          <p>From precision road markings to large-scale infrastructure projects, CS INFRA has consistently delivered excellence on every surface. Our major achievements showcase a legacy of innovation, safety, and quality across the nation's roads.</p>
+          <div class="image-grid">
+              <img src="./assets/029efcc4-cefa-4734-a51a-52c0d91f44fb.jpg" alt="Image 1 "class="galary-img">
+              <img src="./assets/roadpic.jpg" alt="Image 2" class="galary-img">
+              <img src="./assets/roadpic4.jpg" alt="Image 3" class="galary-img">
+              <img src="./assets/renewpic.jpg" alt="Image 4" class="galary-img">
+              <!-- <img src="https://via.placeholder.com/400x300" alt="Image 3" class="galary-img">
+              <img src="./assets/roadpic2.jpg" alt="Image 4" class="galary-img"> -->
+          </div>
+        </div>
+
+          <!-- get in touch -->
+          <div class="contact_us_green" id="contact" style=" margin-top: 50px;">
+            <div class="responsive-container-block big-container">
+              <div class="responsive-container-block container">
+                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b-2" style="padding-right: 0px;">
+                  <form class="form-box" action="https://formspree.io/f/mwpezylg"
+                  method="POST">
+                    <div class="container-block form-wrapper">
+                      <div class="head-text-box">
+                        <p class="text-blk contactus-head" >
+                          Contact us
+                        </p>
+                        <p class="text-blk contactus-subhead" style="text-align: center; font-size: medium;">
+                          Get In Touch With Us ! We Are Always Here To Give You World class Services.
+                        </p>
+                      </div>
+                      <div class="responsive-container-block">
+                        <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-6">
+                          <p class="text-blk input-title">
+                            FIRST NAME
+                          </p>
+                          <input class="input" id="ijowk-6" name="First Name" required autocomplete="off" placeholder="name">
+                        </div>
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                          <p class="text-blk input-title">
+                            LAST NAME
+                          </p>
+                          <input class="input" id="indfi-4" name="Last Name " autocomplete="off" required placeholder="surname">
+                        </div>
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                          <p class="text-blk input-title">
+                            EMAIL
+                          </p>
+                          <input class="input" id="ipmgh-6" name="Email" autocomplete="off" type="email" required  placeholder="example@gmail.com">
+                        </div>
+                        <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                          <p class="text-blk input-title">
+                            PHONE NUMBER
+                          </p>
+                          <input class="input" id="imgis-5" name="PhoneNumber" autocomplete="off" required placeholder="1234567890">
+                        </div>
+                        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-6">
+                          <p class="text-blk input-title">
+                            WHAT DO YOU HAVE IN MIND
+                          </p>
+                          <textarea class="textinput" id="i5vyy-6" placeholder="Please enter query..." required autocomplete="off" minlength="10" name="Message"></textarea>
+                        </div>
+                      </div>
+                      <div class="btn-wrapper">
+                        <button class="submit-btn" style="background-color: blue;">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="ifgi">
+                  <div class="container-box">
+                    <div class="text-content">
+                      <p class="text-blk contactus-head">
+                        Contact us
+                      </p>
+                      <p class="text-blk contactus-subhead">
+                        At CS-INFRA, we are committed to delivering quality and excellence in every project. Whether you have a question, need a quote, or are ready to start your next construction project, our team is here to help.
+                      </p>
+                    </div>
+                    <div class="workik-contact-bigbox">
+                      <div class="workik-contact-box">
+                        <div class="phone text-box">
+                          <a href="tel:91 7003313389" target="_blank"><i class="fa-solid fa-phone contact-svg"></i></a>
+                          <p class="contact-text">
+                            +91 7003313389
+                          </p>
+                        </div>
+                        <div class="address text-box">
+                          <a href="mailto:csinfra2107@gmail.com"><i class="fa-solid fa-envelope contact-svg"></i></a>
+                        
+                          <p class="contact-text">
+                            csinfra2107@gmail.com
+                          </p>
+                        </div>
+                        <div class="mail text-box">
+                         <a href="https://maps.app.goo.gl/qPybKwG5NpBA86Jv7" target="_blank"> <i class="fa-solid fa-location-dot contact-svg"></i></a>
+                          <p class="contact-text">
+                            5/17, Buroshibtola Main Road Kolkata 700 038
+                          </p>
+                        </div>
+                        <div class="mail text-box">
+                          <a href="https://wa.me/c/917003313389" target="_blank"> <i class="fa-brands fa-whatsapp contact-svg"></i></a>
+                           <p class="contact-text">
+                            +91 7003313389
+                           </p>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="column">
+                  <h3>About Us</h3>
+                  <p>Clients</p>
+                  <p>Major Achievements</p>
+                  <p>Recognition</p>
+              </div>
+              <div class="column">
+                  <h3>INFRA</h3>
+                  <p>Road Marking</p>
+                  <p>Hot Thermoplastic</p>
+                  <p>Cold Thermoplastic</p>
+                  <p>2K Cold Plastic Paint Rumble Strip</p>
+                  <p>Audible Vibratory Marking</p>
+              </div>
+              <div class="column">
+                  <h3>Services</h3>
+                  <p>Raised Pavement Markers</p>
+                  <p>Roadway Maintenance Service</p>
+                  <p>3M Retro Reflective Signage</p>
+                  <p>(3M Converter. Authorised Digital Printing HP - Latex 3M Authorised)</p>
+              </div>
+              <div class="column images">
+                  <img src="./assets/C S Infra-TSD-Cert'23 (1)_page-0001.jpg" alt="Certificate">
+                  <img src="./assets/C S INFRA - Authorized Distributor_Project Partner Certificate-23-24 (1) (1)_page-0001.jpg" alt="Certificate">
+              </div>
+          </div>
+      </div>
+      <hr style="height: 2px; width: 100%;">
+      <div class="footer-bottom">
+          <p>&copy; 2024. All Rights Reserved | <a href="#">CS INFRA</a> | <a href="#">Privacy Policy</a></p>
+          
+      </div>
+      </footer>
+
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d71d14af0f.js"
+      crossorigin="anonymous"
+    ></script>
+   <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./dist/script.js"></script>
+    <script src="./dist/main.js"></script>
+    <script src="./dist/services.js"></script>
+  </body>
+</html>

@@ -1,24 +1,18 @@
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-
-    
-
-#major{
-
+.container h1{
     text-align: center;
-    font-weight: 600; /* Make the text bold */
-    margin-top: 20px;
+    margin-inline: auto;
     margin-bottom: 20px;
-    color: #131212d5; /* Optional: change color for better contrast */
 }
 
 .container p {
-    font-size: 1rem;
-    text-align: start;
+    font-size: 1.1rem;
+    text-align: center;
     color: #313131;
     margin-bottom: 40px;
 }
@@ -54,5 +48,115 @@
 @media (max-width: 576px) {
     .image-grid {
         grid-template-columns: 1fr;
+    }
+} */
+
+/* Container for the entire section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading (Major Achievements) styling */
+h1 {
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    font-size: 2.9rem;
+    line-height: 1.2; /* Ensure proper line height */
+    word-wrap: break-word; /* Handle long words by wrapping them */
+    hyphens: auto; /* Automatically hyphenate long words */
+}
+
+/* Paragraph below the heading */
+.container p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+    padding: 0 20px; /* Add padding to give some breathing room on small screens */
+}
+
+/* Image grid layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.galary-img {
+    border: 1px solid blue;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Caption text below images */
+figcaption {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1 {
+        font-size: 2.2rem; /* Slightly smaller heading on tablets */
+    }
+    .container p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1 {
+        font-size: 2rem; /* Smaller heading for mobile */
+        margin-bottom: 15px; /* Adjust spacing for smaller screens */
+    }
+    .container p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 1.7rem; /* Even smaller heading for very small screens */
+        margin-bottom: 10px;
+    }
+    .container p {
+        font-size: 0.9rem;
+        padding: 0 15px; /* More padding for smaller screens */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 375px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        font-size: 1rem; /* Scale heading for very small screens */
+        margin-bottom: 10px;
+        margin-inline: auto;
+        word-break: break-word; /* Prevents words from breaking improperly */
+       
+    }
+    .container p {
+        font-size: 0.9rem;
+        padding: 0 15px; /* More padding for smaller screens */
     }
 }

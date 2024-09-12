@@ -18,9 +18,9 @@ html,body{
     min-width: 100vw;
 }
 
-a{
+ .headerSection a{
     text-decoration: none;
-    color: rgb(20, 3, 3);
+    color: whitesmoke;
     display: inline-block;
     font-size: 1.2rem;
 }
@@ -50,13 +50,22 @@ a{
  .navBar{
     padding: 10px 20px; /*change*/
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.17);
+    background-color: rgba(0, 0, 0, 0.37);
+    color: azure;
     backdrop-filter: blur(50px);
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     z-index: 1;
 }
+
+.nav-links{
+ 
+  display: flex;
+  align-items: center;
+}
+
+
 .sidebar{
     position: fixed;
     display:none;
@@ -65,7 +74,7 @@ a{
     height: 100vh;
     padding: 4vw 5vw ;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.377);
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     
@@ -83,7 +92,7 @@ a{
 .side-contact-button{
     font-size: medium;
     font-weight: 500;
-    border-color: black;
+    border: 1px solid blue;
     padding: 10px;
     text-align: center;
     background-color: rgba(72, 72, 72, 0.358);
@@ -101,8 +110,11 @@ a{
 
 
 
- .logo{
-    font-size: 2.5rem;
+ .logo img{
+    
+  width: 100%;
+  height: 60px;
+  
 }
 
 
@@ -112,14 +124,22 @@ ul{
     justify-content: space-between;
     gap: 30px;
     
+    
 }
  .contact-button{
+    display: flex;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    margin-top: auto;
+    margin-bottom:auto ;
+    height:50px;
+    width: 120px;
     font-size: medium;
     font-weight: 500;
     background-color: rgba(72, 72, 72, 0.358);
-    padding: 10px;
     border-radius: 25px;
     text-align: center;
+    border: 1px solid blue;
 
 }
 
@@ -151,10 +171,20 @@ ul{
     font-weight: medium;
     color: white;
 }
-
-.hambarger{
-    display: none;
+/* Default styles (for mobile and smaller screens) */
+.hambarger {
+  display: block;  /* Display the hamburger icon by default */
+  font-size:40px; /* Increase size */
+  cursor: pointer;
 }
+
+/* Hide the hamburger icon on larger screens */
+@media only screen and (min-width: 768px) { /* This is for tablets and larger screens */
+  .hambarger {
+      display: none; /* Hide hamburger icon on screens larger than 768px */
+  }
+}
+
 
 .details{
     font-size: 1.2rem;
@@ -436,6 +466,9 @@ ul{
   }
   
   @media (max-width: 1024px) {
+    .text-content{
+      display: none;
+    }
     .contact_us_green .responsive-container-block.container {
       justify-content: center;
     }
