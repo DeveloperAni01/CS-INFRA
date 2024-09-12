@@ -92,7 +92,7 @@ html,body{
 .side-contact-button{
     font-size: medium;
     font-weight: 500;
-    border: 1px solid blue;
+    border: 1px solid rgba(255, 255, 255, 0.897);
     padding: 10px;
     text-align: center;
     background-color: rgba(72, 72, 72, 0.358);
@@ -133,13 +133,13 @@ ul{
     margin-top: auto;
     margin-bottom:auto ;
     height:50px;
-    width: 120px;
+    width: 150px;
     font-size: medium;
     font-weight: 500;
     background-color: rgba(72, 72, 72, 0.358);
     border-radius: 25px;
     text-align: center;
-    border: 1px solid blue;
+    border: 1px solid rgba(252, 252, 252, 0.856);
 
 }
 
@@ -315,7 +315,9 @@ ul{
     color: #404040d7;
     font-size: 16px;
     font-weight: 600;
-    margin: 10px 20px;
+    margin: 10px 0px;
+    margin-left: 0px;
+    padding-left: 0px;
   }
   
   .contact_us_green .input {
