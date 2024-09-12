@@ -112,7 +112,7 @@ html,body{
 
  .logo img{
     
-  width: 100%;
+  width: auto;
   height: 60px;
   
 }
