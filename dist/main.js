@@ -24,6 +24,8 @@ function updateReachUsVisibility() {
   const reachUsElement = document.querySelector('.reach-us');
   if (window.innerWidth <= 1024) {
     reachUsElement.style.display = 'block';
+    reachUsElement.classList.add("text-blk")
+    reachUsElement.classList.add("contactus-head")
   } else {
     reachUsElement.style.display = 'none';
   }
